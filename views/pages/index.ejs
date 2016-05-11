@@ -5,122 +5,169 @@
 </head>
 
 <body class="landing">
-  <!-- Banner -->
-  <% include ../partials/nav.ejs %>
-          <section id="banner">
-          <!-- <i class="icon fa-diamond"></i> -->
+    <h1>Billboard</h1>
+
+        <!-- ==========================
+        MODALS - START
+    =========================== -->
+    <section id="modal">
+        <!-- ==========================
+        MODAL SUBSCRIBE - START
+    =========================== -->
+      <div class="modal fade" id="aboutme" tabindex="-1" role="dialog" aria-labelledby="aboutme" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+
+                <div class="col-md-12">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h3>About Me</h3>
+                </div>
+
+                <div class="col-md-offset-2 col-md-4 col-sm-6 col-xs-12">
+                 <img src="image/icon3.png" class="img-responsive" alt="" />
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="aboutme_list">
+                    <li>Web Developer</li>
+                    <li>Focus on Front-end techniques</li>
+                    <li>Understand Latest JS Framework</li>
+                    <li>RWD application expierences</li>
+                    <li>Capable of building REST API with RoR</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==========================
+        MODAL SUBSCRIBE - END
+          =========================== -->
+
+       <!-- ==========================
+        MODAL CONTACT - START
+    =========================== -->
+
+      <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contact" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+
+                <div class="col-md-12">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h3>Contact</h3>
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                 <img src="image/icon1.png" class="img-responsive" alt="" />
+                  <address class="email">
+                    <a href="mailto:#">yonaichin@gmail.com</a>
+                  </address>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+         <!-- ==========================
+        MODAL CONTACT  - END
+          =========================== -->
+
+       <!-- ==========================
+        MODAL WORK - START
+         =========================== -->
+
+      <div class="modal fade" id="work" tabindex="-1" role="dialog" aria-labelledby="work" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+
+                <div class="col-md-12">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h3>About my work</h3>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6">
+                    <a href="http://www.mis.ntpu.edu.tw" target="_blank">
+                      <img src="image/ntpumis.png" class="img-responsive img-rounded" alt="" />
+                    </a>
+                    <h4>臺北大學資訊管理所網站</h4>
+                    <p class="center-block">網站系統規劃、部署、上線</p>
+                    <p class="center-block">React JS / Rails REST API</p>
+
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6">
+                    <a href="https://www.ls-ecommerce.com.tw/" target="_blank">
+                      <img src="image/ls-ecommerce.png" class="img-responsive img-rounded" alt="" />
+                    </a>
+                    <h4>磊山保經旅平險網站</h4>
+                    <p class="center-block">前端開發、金流介接</p>
+                    <p class="center-block">jQuery / Pay2go / Coffeescript</p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6">
+                    <a href="http://leishan.taipei/" target="_blank">
+                      <img src="image/ls-activity.png" class="img-responsive img-rounded" alt="" />
+                    </a>
+                    <h4>磊山保經活動網站</h4>
+                    <p class="center-block">前端開發、金流介接</p>
+                    <p class="center-block">jQuery / Pay2go / Coffeescript</p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6">
+                    <a href="http://www.locksure.com.tw" target="_blank">
+                      <img src="image/locksure.png" class="img-responsive img-rounded" alt="" />
+                    </a>
+                    <h4>今湛企業有限公司</h4>
+                    <p class="center-block">介面調整、功能維護</p>
+                    <p class="center-block">Rails / jQuery / CSS3</p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6">
+                    <a href="https://speed-radars.herokuapp.com/" target="_blank">
+                      <img src="image/speedradar.png" class="img-responsive img-rounded" alt="" />
+                    </a>
+                    <h4>測速照相列表</h4>
+                    <p class="center-block">網站爬蟲技術擷取南極星網站之資訊</p>
+                    <p class="center-block">Rails / Web Crawler</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+         <!-- ==========================
+        MODAL WORK - END
+          =========================== -->
+
+    </section>
+
+    <!-- ==========================
+        MODALS - END
+    =========================== -->
+        <!-- ==========================
+        CONTENT - START
+    =========================== -->
+
+    <div class="container">
+        <div class="row" id="text"><!-- start of row text -->
+          <div class="slogan">
             <h2>作品集</h2>
-            <p>The lists of participated projects</p>
-            <ul class="actions">
-              <li><a data-scroll href="#gallery" class="button big special">Learn More</a></li>
-            </ul>
-          </section>
+            <p>Hi, I'm <span class="highlight">Olly</span></p>
+            <p>Here's are the collection of my participated projects.</p>
 
-  <!-- One -->
-          <section id="gallery" class="wrapper style1">
-                  <div class="inner">
-                    <article class="feature left">
-                    <span class="image"><img src="images/ntpumis.png" alt="" /></span>
-                      <div class="content">
-                              <h2>國立臺北大學資訊管理所網站</h2>
-                              <p>負責規劃網站架構設計(包含前後台功能)、部署與上線</p>
-                              <ul>
-                                <li>Front End : Build on React JS</li>
-                                <li>Back End : Build on Rails API</li>
-                              </ul>
-                              <ul class="actions">
-                                <li>
-                                  <a href="http://www.mis.ntpu.edu.tw" target="_blank" class="button alt">Go</a>
-                                </li>
-                              </ul>
-                      </div>
-                    </article>
-                    <article class="feature right">
-                      <span class="image"><img src="images/ls-ecommerce.png" alt="" /></span>
-                      <div class="content">
-                              <h2>磊山保經旅平險網站</h2>
-                              <p>參與網站前端功能開發與金流介接</p>
-                              <ul>
-                                <li>Rails Project</li>
-                              </ul>
-                              <ul class="actions">
-                                <li>
-                                  <a href="https://www.ls-ecommerce.com.tw/" target="_blank" class="button alt">Go</a>
-                                </li>
-                              </ul>
-                      </div>
-                    </article>
-                    <article class="feature left">
-                      <span class="image"><img src="images/ls-activity.png" alt="" /></span>
-                      <div class="content">
-                              <h2>磊山保險活動網站</h2>
-                              <p>參與網站前端功能開發</p>
-                              <ul>
-                                <li>Rails Project</li>
-                              </ul>
-                              <ul class="actions">
-                                <li>
-                                  <a href="http://leishan.taipei/" target="_blank" class="button alt">Go</a>
-                                </li>
-                              </ul>
-                      </div>
-                    </article>
-                    <article class="feature right">
-                      <span class="image"><img src="images/locksure.png" alt="" /></span>
-                      <div class="content">
-                              <h2>今湛企業有限公司 Locksure Inc.</h2>
-                              <p>負責網站功能之規劃及其介面功能調整</p>
-                              <ul>
-                                <li>Rails Project</li>
-                              </ul>
-                              <ul class="actions">
-                                <li>
-                                  <a href="http://www.locksure.com.tw" target="_blank" class="button alt">Go</a>
-                                </li>
-                              </ul>
-                      </div>
-                    </article>
-                    <article class="feature left">
-                      <span class="image"><img src="images/speedradar.png" alt="" /></span>
-                      <div class="content">
-                              <h2>測速照相列表</h2>
-                              <p>運用網站爬蟲技術，去讀取南極星網站之測速照相列表</p>
-                              <ul>
-                                <li>Rails Project</li>
-                                <li>Web Crawler</li>
-                              </ul>
-                              <ul class="actions">
-                                <li>
-                                  <a href="https://speed-radars.herokuapp.com/" target="_blank" class="button alt">Go</a>
-                                </li>
-                              </ul>
-                      </div>
-                    </article>
-                  </div>
-          </section>
+            <a class="btn btn-primary" data-toggle="modal" data-target="#work">Learn More</a>
 
-          <section class="wrapper style3 special">
-            <div class="inner">
-              <header class="major narrow">
-                <h2>關於我</h2>
-                <p>About Me</p>
-              </header>
-              <p>Web Developer</p>
-              <p>Focus on Front-end techniques</p>
-              <p>Understand React with flux & redux</p>
-              <p>Familiar with git versioning</p>
-              <p>Capable of building REST API</p>
-            </div>
-          </section>
+           </div>
+        </div><!-- end of row text -->
 
-          <section class="wrapper style2 special">
-            <div class="inner">
-            <header class="major narrow">
-                    <h2>Get in touch</h2>
-                    <p><i class="fa fa-envelope-o"></i> yonaichin@gmail.com</p>
-            </header>
-            </div>
-          </section>
+
+    </div><!-- end of container -->
 
   <% include ../partials/footer.ejs %>
   <% include ../partials/common-scripts.ejs %>
